@@ -15,3 +15,211 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 7ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 344)
 
 
+Started GET "/" for 127.0.0.1 at 2024-01-02 13:49:48 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/efren/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/efren/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 576)
+Completed 200 OK in 47ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 7287)
+
+
+Started GET "/routes" for 127.0.0.1 at 2024-01-02 13:49:52 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  
+Started GET "/lists" for 127.0.0.1 at 2024-01-02 13:50:00 -0800
+  
+ActionController::RoutingError (uninitialized constant EasyBrokerListsControllerController):
+  
+Started GET "/lists" for 127.0.0.1 at 2024-01-02 13:50:37 -0800
+  
+Zeitwerk::NameError (expected file /home/efren/Desktop/EasyBroker/easybroker/easy_broker/app/controllers/easy_broker_lists_controller.rb to define constant EasyBrokerListsController, but didn't):
+  
+zeitwerk (2.6.12) lib/zeitwerk/loader/callbacks.rb:33:in `on_file_autoloaded'
+zeitwerk (2.6.12) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.1.2) lib/active_support/inflector/methods.rb:290:in `const_get'
+activesupport (7.1.2) lib/active_support/inflector/methods.rb:290:in `constantize'
+activesupport (7.1.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.1.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.1.2) lib/action_dispatch/request/utils.rb:100:in `action_encoding_template'
+actionpack (7.1.2) lib/action_dispatch/request/utils.rb:85:in `encode'
+actionpack (7.1.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.1.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2024-01-02 13:51:14 -0800
+  
+Zeitwerk::NameError (wrong constant name EasyBrokerListsController. inferred by Module from file
+
+  /home/efren/Desktop/EasyBroker/easybroker/easy_broker/app/controllers/easy_broker_lists_controller..rb
+
+Possible ways to address this:
+
+  * Tell Zeitwerk to ignore this particular file.
+  * Tell Zeitwerk to ignore one of its parent directories.
+  * Rename the file to comply with the naming conventions.
+  * Modify the inflector to handle this case.
+):
+  
+zeitwerk (2.6.12) lib/zeitwerk/loader/helpers.rb:171:in `rescue in cname_for'
+zeitwerk (2.6.12) lib/zeitwerk/loader/helpers.rb:166:in `cname_for'
+zeitwerk (2.6.12) lib/zeitwerk/loader.rb:414:in `block in define_autoloads_for_dir'
+zeitwerk (2.6.12) lib/zeitwerk/loader/helpers.rb:40:in `block in ls'
+zeitwerk (2.6.12) lib/zeitwerk/loader/helpers.rb:25:in `each'
+zeitwerk (2.6.12) lib/zeitwerk/loader/helpers.rb:25:in `ls'
+zeitwerk (2.6.12) lib/zeitwerk/loader.rb:411:in `define_autoloads_for_dir'
+zeitwerk (2.6.12) lib/zeitwerk/loader.rb:124:in `block (2 levels) in setup'
+zeitwerk (2.6.12) lib/zeitwerk/loader.rb:123:in `each'
+zeitwerk (2.6.12) lib/zeitwerk/loader.rb:123:in `block in setup'
+zeitwerk (2.6.12) lib/zeitwerk/loader.rb:120:in `synchronize'
+zeitwerk (2.6.12) lib/zeitwerk/loader.rb:120:in `setup'
+zeitwerk (2.6.12) lib/zeitwerk/loader.rb:230:in `reload'
+activesupport (7.1.2) lib/active_support/dependencies.rb:79:in `block in clear'
+activesupport (7.1.2) lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+activesupport (7.1.2) lib/active_support/dependencies/interlock.rb:17:in `unloading'
+activesupport (7.1.2) lib/active_support/dependencies.rb:32:in `unload_interlock'
+activesupport (7.1.2) lib/active_support/dependencies.rb:77:in `clear'
+railties (7.1.2) lib/rails/application/finisher.rb:185:in `block (2 levels) in <module:Finisher>'
+activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
+railties (7.1.2) lib/rails/application/finisher.rb:214:in `block (3 levels) in <module:Finisher>'
+activesupport (7.1.2) lib/active_support/callbacks.rb:110:in `run_callbacks'
+activesupport (7.1.2) lib/active_support/reloader.rb:128:in `class_unload!'
+railties (7.1.2) lib/rails/application/finisher.rb:213:in `block (2 levels) in <module:Finisher>'
+activesupport (7.1.2) lib/active_support/callbacks.rb:448:in `instance_exec'
+activesupport (7.1.2) lib/active_support/callbacks.rb:448:in `block in make_lambda'
+activesupport (7.1.2) lib/active_support/callbacks.rb:202:in `block (2 levels) in halting'
+activesupport (7.1.2) lib/active_support/callbacks.rb:707:in `block (2 levels) in default_terminator'
+activesupport (7.1.2) lib/active_support/callbacks.rb:706:in `catch'
+activesupport (7.1.2) lib/active_support/callbacks.rb:706:in `block in default_terminator'
+activesupport (7.1.2) lib/active_support/callbacks.rb:203:in `block in halting'
+activesupport (7.1.2) lib/active_support/callbacks.rb:598:in `block in invoke_before'
+activesupport (7.1.2) lib/active_support/callbacks.rb:598:in `each'
+activesupport (7.1.2) lib/active_support/callbacks.rb:598:in `invoke_before'
+activesupport (7.1.2) lib/active_support/callbacks.rb:109:in `run_callbacks'
+activesupport (7.1.2) lib/active_support/execution_wrapper.rb:129:in `run'
+activesupport (7.1.2) lib/active_support/execution_wrapper.rb:125:in `run!'
+activesupport (7.1.2) lib/active_support/reloader.rb:122:in `run!'
+activesupport (7.1.2) lib/active_support/execution_wrapper.rb:78:in `block in run!'
+<internal:kernel>:90:in `tap'
+activesupport (7.1.2) lib/active_support/execution_wrapper.rb:75:in `run!'
+activesupport (7.1.2) lib/active_support/reloader.rb:64:in `run!'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2024-01-02 13:51:31 -0800
+  
+ActionController::RoutingError (uninitialized constant EasyBrokerListsController
+Did you mean?  EasyBrokerLIstsController):
+  
+Started GET "/lists" for 127.0.0.1 at 2024-01-02 13:52:04 -0800
+  
+ActionController::RoutingError (uninitialized constant EasyBrokerListsController
+Did you mean?  EasyBrokerLIstsController):
+  
+Started GET "/rputes" for 127.0.0.1 at 2024-01-02 13:52:19 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/rputes"):
+  
+Started GET "/lists" for 127.0.0.1 at 2024-01-02 13:53:30 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EasyBrokerListsController#index as HTML
+Completed 200 OK in 533ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 4861)
+
+
+Started POST "/lists" for ::1 at 2024-01-02 14:44:50 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/lists"):
+  
+Started GET "/lists" for ::1 at 2024-01-02 14:44:59 -0800
+Processing by EasyBrokerListsController#index as */*
+  Parameters: {"product_id"=>1, "recipe_id"=>1, "quantity"=>1, "unit_of_measure"=>"EJEMPLO1", "products_type"=>"ejemplo1", "priceable_type"=>"One", "priceable_id"=>1, "easy_broker_list"=>{"product_id"=>1, "recipe_id"=>1, "quantity"=>1, "unit_of_measure"=>"EJEMPLO1", "products_type"=>"ejemplo1", "priceable_type"=>"One", "priceable_id"=>1}}
+Completed 200 OK in 509ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 5355)
+
+
